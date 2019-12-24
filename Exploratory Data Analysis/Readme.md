@@ -54,3 +54,23 @@ rejected_variables = profile.get_rejected_variables(threshold=0.9)
 profile = df.profile_report(title='Pandas Profiling Report')
 profile.to_file(output_file="output.html")
 ```
+
+
+# Pandas Data Types
+
+* A data type is essentially an internal construct that a programming language uses to understand how to store and manipulate data. For instance, a program needs to understand that you can add two numbers together like 5 + 10 to get 15. Or, if you have two strings such as “cat” and “hat” you could concatenate (add) them together to get “cathat.”
+
+* A possible confusing point about pandas data types is that there is some overlap between pandas, python and numpy. This table summarizes the key points:
+
+| Pandas dtype  |  Python type | NumPy type  |  Usage |
+| :------------: | :------------: | :------------: | :------------: |
+|object  |  str  or mixed | string_, unicode_, mixed types  | Text or mixed numeric and non-numeric values  |
+|  int64 | int  | int_, int8, int16, int32, int64, uint8, uint16, uint32, uint64  |  Integer numbers |
+|  float64  | float  | float_, float16, float32, float64  | Floating point numbers  |
+| bool  |  bool | bool_  |  True/False values |
+|  datetime64 | NA  |  datetime64[ns] |  Date and time values |
+|  timedelta[ns] | NA  |  NA |  Differences between two datetimes |
+| category  | NA  |  NA |  Finite list of text values |
+
+
+
